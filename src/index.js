@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 // 그리드스타일
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'swiper/swiper-bundle.css';
 
 // 주은 공통클래스
 import './scss/common.scss'

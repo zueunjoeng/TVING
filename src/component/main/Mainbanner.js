@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
-import hd from '../../scss/layout/hd.module.scss';
+import mainb from '../../scss/layout/mainbanner.module.scss';
 
 
 function Mainbanner() {
     return (
-       <header>
-            메인베너
-       </header>  
+       
+            <div className={mainb.mainbanner}>
+
+            </div>
+  
     )
 }
 
