@@ -4,9 +4,9 @@ import faq from '../../scss/layout/faq.module.scss';
 
 function Faq() {
     return (
-       <header>
-              자주묻는 질문
-       </header>  
+       <section>
+        <p className='titleText'>FAQ</p>
+       </section>
     )
 }
 

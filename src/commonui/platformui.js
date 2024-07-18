@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Platsection = styled.section`
+export const Platdiv = styled.div`
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;

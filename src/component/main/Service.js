@@ -4,8 +4,8 @@ import service from '../../scss/layout/service.module.scss'
 function Service(){
     return (
         <section>
-            플랫폼 컨텐츠
-        </section>
+        <p className='titleText'><span>TVING</span> 구독 서비스</p>
+       </section>
     )
 }
 

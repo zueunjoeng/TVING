@@ -20,13 +20,20 @@ dt, dd, li{
 a{
     text-decoration: none !important;
 }
-
+section{
+    margin-bottom: 180px;
+}
 .titleText{
     font-family: "Noto Sans";
     font-size: 3.75rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
 }
 
 .hashTitle{

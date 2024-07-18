@@ -6,13 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
 import platdb from '../../data/platformDB.json'
-import {Platsection, Containdiv, Slidediv, Imgdiv } from '../../commonui/platformui'
+import {Platdiv, Containdiv, Slidediv, Imgdiv } from '../../commonui/platformui'
 
 
 
 function Platform() {
     return (
-        <Platsection>
+        <section>
+        <Platdiv>
                 <Swiper
                     loop={true}
                     effect="coverflow"
@@ -51,7 +52,8 @@ function Platform() {
                     <div className="swiper-button-prev"></div>
                 </Swiper>
            
-        </Platsection>
+        </Platdiv>
+        </section>
     );
 }
 
