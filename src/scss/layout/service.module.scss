@@ -1,0 +1,41 @@
+.subs{
+    display: inline-block;
+    background-color: #2F2F2F;
+    padding: 15px 25px;
+    border-radius: 30px;
+    position: relative;
+    width:345px;
+    text-align: center;
+}
+.sub_s{
+    display: inline-block;
+    background-color: #7F7F7F;
+    padding: 15px 25px;
+    border-radius: 30px;
+    position: relative;
+    width:345px;
+    text-align: center;
+}
+.sub_s span{
+    text-align: right;
+}
+
+.subs span {
+    text-align: right;
+}
+.sub_s:hover, .subs:hover{
+    position: absolute;
+    width:1400px;
+    text-align: left;
+}
+
+.submoney {
+    display: none; /* 기본적으로 숨깁니다 */
+    text-align: right;
+    right:15%;
+  }
+  
+  .sub_s:hover~.submoney, .subs:hover ~ .submoney {
+    display: block; /* .subs에 마우스를 올리면 .submoney를 보이게 합니다 */
+    position: absolute;
+  }

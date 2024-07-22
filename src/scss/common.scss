@@ -52,10 +52,22 @@ section{
 }
 .textBtn{
     font-family: "Noto Sans";
-    font-size: 1.875rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    color:white;
+    font-size: 20px;
+    background-color: #FF153C;
+    padding: 1rem;
+    border-radius: 50px;
+    width: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBtn:hover{
+    background-color:#FF869A;
 }
 .text{
     font-size : 35px;

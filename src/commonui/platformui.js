@@ -1,30 +1,31 @@
 import styled from 'styled-components';
 
 export const Platdiv = styled.div`
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    height: 430px;
+    width: 100%;
+  height: 430px;
     background-color: transparent;
+    margin-bottom: 30px;
 `;
 
 export const Containdiv =styled.div`
-    width: 80%;
-    max-width: 600px;
+    width: 800px;
+
 `;
 
 export const Slidediv = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 18px;
     color: #fff;
     background:  transparent;
-    /* height: 300px; Optional: Set a fixed height for the slides */
+    width: 1400px;
+    padding-left: 1.1rem;
 `;
 
 export const Imgdiv = styled.img`
