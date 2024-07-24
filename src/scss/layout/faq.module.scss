@@ -1,0 +1,23 @@
+.faqCategory {
+    background-color: #606060;
+    color:white;
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .faqCategory.on {
+    background-color: #FF869A;
+    color: #fff;
+  }
+  
+//   .d-flex {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+  
+  #faq_list {
+    margin-top: 20px;
+  }
