@@ -6,7 +6,7 @@
 }
 body{
     font-family: 'Noto Sans KR', sans-serif !important;
-    font-weight: 900 !important;
+    font-weight: 900;
     background-color: black;
     color:white;
 }
@@ -72,14 +72,15 @@ section{
 .noto12{
     font-size:12px;
 }
-.noto15px{
+.noto15{
     font-size: 15px;
+    font-weight: 600;
 }
 .noto20{
     font-family: 'Noto Sans KR';
     font-size: 1.25rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
     line-height: normal;
 }
 .noto40{

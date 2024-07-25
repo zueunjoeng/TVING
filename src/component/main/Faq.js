@@ -17,12 +17,12 @@ function Faq(props) {
       <p className='titleText'>
         FAQ
       </p>
-      <div id={props.keynm} className="d-flex flex-wrap flex-row">
+      <div id={props.keynm} className="d-flex flex-wrap flex-row justify-content-center mb-5">
         {
           faqlist.map((e, i) => (
             <button
               key={`category${i}`}
-              className={`${faq.faqCategory} ${faqmenu === i ? faq.on : ''}`}
+              className={`${faq.faqCategory} ${faqmenu === i ? faq.on : ''} `}
               onClick={() => qnaclick(i)}
             >
               {e.name}
@@ -30,7 +30,7 @@ function Faq(props) {
           ))
         }
       </div>
-      <div id="faq_list">
+      <div id="faq_list" className='text-center'>
         {
           faqlist[faqmenu].list.split('|').map((v, i) => (
             <p key={`faq-item${i}`}>
