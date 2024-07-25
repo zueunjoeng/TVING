@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Service(){
     return (
+        // hover를 글자가 아닌 부모div로 옮겨주기
         <section>
         <p className='titleText'><span>TVING</span> 구독 서비스</p>
         <div className='container'>
