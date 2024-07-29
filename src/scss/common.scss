@@ -1,14 +1,15 @@
 @font-face { 
-    font-family: 'BlackHanSans-Regular'; 
-    font-style: normal; 
-    font-weight: 300; 
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
     src: url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap') format('woff2');
 }
 body{
-    font-family: 'Noto Sans KR', sans-serif !important;
+    font-family: 'BlackHanSans-Regular', 'Noto Sans KR', sans-serif !important;
     font-weight: 900;
     background-color: black;
     color:white;
+    overflow-x: hidden;
 }
 ul, li, dl, dt,dd, h1, h2, h3,h4,h5, p{
     margin: 0;
@@ -91,14 +92,14 @@ section{
     line-height: normal;
 }
 .black12{
-    font-family: 'BlackHanSans-Regular';
+    font-family: 'Black Han Sans';
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 .black15{
-    font-family: 'BlackHanSans-Regular';
+    font-family: 'Black Han Sans';
     font-size: 0.9375rem;
     font-style: normal;
     font-weight: 400;
