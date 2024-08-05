@@ -8,17 +8,17 @@ function Service(){
         <section>
         <p className='titleText'><span>TVING</span> 구독 서비스</p>
         <div className='container'>
-        <div className='d-flex justify-content-between align-items-center noto40 mb-5'>
+        <div className={`d-flex justify-content-between align-items-center noto40 mb-5 ${service.title}`}>
             <p className={`me-5 ${service.subs}`}>광고형 스텐다드</p>
             <span className='text'>·········    동시시청 2대  ㅣ 콘텐츠 다운로드 15회</span>
             <span className={`noto40 ${service.submoney}`}>·········   월 5,500원</span>
         </div>
-        <div className='d-flex justify-content-between align-items-center noto40 mb-5'>
+        <div className={`d-flex justify-content-between align-items-center noto40 mb-5 ${service.title}`}>
             <p className={`me-4 ${service.sub_s}`}>스텐다드</p>
             <span className='text'>··················   동시시청 2대  ㅣ  콘텐츠 다운로드 300회</span>
             <span className={`noto40 ${service.submoney}`}>·········   월 13,500원</span>
         </div>
-        <div className='d-flex justify-content-between align-items-center noto40 mb-5'>
+        <div className={`d-flex justify-content-between align-items-center noto40 mb-5 ${service.title}`}>
             <p className={`me-3 ${service.subs}`}>프리미엄</p>
             <span className='text'>···························   동시시청 4대  ㅣ  콘텐츠 다운로드 400회</span>
             <span className={`noto40 ${service.submoney}`}>·········   월 17,000원</span>

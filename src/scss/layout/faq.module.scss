@@ -18,3 +18,28 @@
   #faq_list {
     margin-top: 20px;
   }
+
+// .d-flex {
+//     gap: 10px;
+// }
+
+.faq-category {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.faq_content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.faq_content p {
+    margin: 10px 0;
+}
+
+.faqItem{
+  border-bottom: 0.5px solid white;
+}

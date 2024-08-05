@@ -12,7 +12,7 @@ import platf from '../../scss/layout/platform.module.scss'
 
 function Platform() {
     return (
-        <section>
+        <section> 
             <p className='titleText mb-0'><span>NO. 1</span> K-CONTENTS PLATFORM </p>
             <p className='hashTitle mb-5'># 티빙오리지널 #드라마 #예능 #영화 #kbo리그</p>
         <Platdiv>       

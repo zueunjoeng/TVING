@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 
 
 function Mainbanner() {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault(); // 기본 폼 제출 동작 방지
+        console.log('아이디:', username);
+        console.log('비밀번호:', password);
+        // 여기서 API 요청 등 추가 작업을 수행할 수 있습니다.
+    };
     return (
        <section>
             <div className={mainb.mainbanner}>
@@ -45,20 +54,35 @@ function Mainbanner() {
                 <div className={`${mainb.tentlink} d-flex align-items-center justify-content-center`}>
                 <Link to='/Outside.the.Tent.is.Europe' className='textBtn'>시즌 4 : 1화 시청하기<i className={`${mainb.bi} bi-caret-right-fill ms-2`}></i></Link>
                 </div>
+
                 <div className={mainb.login}>
                     <div className={mainb.logintxt}><p>당신의 즐거움에<br/> <span>로그인</span> 하세요.</p></div>
-                    <div className={mainb.loginform}>
+                    <div className={mainb.loginform} onSubmit={handleSubmit}>
                         <div className='d-flex flex-column black15'>
                             <label for="username" className='mb-1'>아이디</label>
-                            <input type="text" id="username" placeholder="아이디를 입력해주세요"  className='mb-1'/>
+                            <input 
+                        type="text" 
+                        id="username" 
+                        placeholder="아이디를 입력해주세요"  
+                        className='mb-1'
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)} // 입력값 상태 업데이트
+                    />
                         </div>
                         <div className='d-flex flex-column black15'>
                             <label for="password" className='mb-1'>비밀번호</label>
-                            <input type="password" id="password" placeholder="비밀번호를 입력해주세요" className='mb-1'/> 
+                            <input 
+                        type="password" 
+                        id="password" 
+                        placeholder="비밀번호를 입력해주세요" 
+                        className='mb-1'
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)} // 입력값 상태 업데이트
+                    />
                         </div>
-                        <div className='d-flex mt-1'>
+                        <div className='d-flex mt-1 align-items-center'>
                             <p className='me-5 black12'>TVING 계정이 없다면?</p>
-                            <p className='black15'>회원가입</p>
+                            <Link to="signup" className='black15 text-white'>회원가입</Link>
                         </div>
                         <button type="submit" className={`black15 mt-3 ${mainb.tvinglogin}`}>티빙 로그인</button>
                     </div>
@@ -72,12 +96,12 @@ function Mainbanner() {
                         </div>
                         <div className={mainb.logindiv}>
                             <Link to="/naver" className='black12'>
-                                <img src="./img/loginicon/kakaotalk.png" alt="" className='me-3'/>NAVER 계정으로 로그인
+                                <img src="./img/loginicon/naver.png" alt="" className='me-3'/>NAVER 계정으로 로그인
                             </Link>
                         </div>
                         <div className={mainb.logindiv}>
                             <Link to="/kakao" className='black12'>
-                                <img src="./img/loginicon/naver.png" alt="" className='me-3'/>KAKAO 계정으로 로그인
+                                <img src="./img/loginicon/kakaotalk.png" alt="" className='me-3'/>KAKAO 계정으로 로그인
                             </Link>
                         </div>
                     </div>

@@ -1,49 +1,55 @@
 import React, { useState } from 'react';
 import faq from '../../scss/layout/faq.module.scss'; // CSS 모듈 가져오기
-import faqlistData from '../../data/faqDB.json';
+import faqlist from '../../data/faqDB.json'
 
-function Faq(props) {
-  const [faqmenu, setFaqmenu] = useState(0);
 
-  const qnaclick = (num) => {
-    setFaqmenu(num);
-  };
-  
+function FAQ (){
+    const [activeIndex, setActiveIndex] = useState(0); // 활성화된 카테고리 인덱스
+    const [activeQuestionIndex, setActiveQuestionIndex] = useState(null); // 활성화된 질문 인덱스
 
-  const { faqlist } = faqlistData;
+    const handleCategoryClick = (index) => {
+        setActiveIndex(index); // 클릭된 카테고리로 인덱스 업데이트
+        setActiveQuestionIndex(null); // 카테고리 변경 시 질문 인덱스 초기화
+    };
 
-  return (
-    <section>
-      <p className='titleText'>
-        FAQ
-      </p>
-      <div id={props.keynm} className="d-flex flex-wrap flex-row justify-content-center mb-5">
-        {
-          faqlist.map((e, i) => (
-            <button
-              key={`category${i}`}
-              className={`${faq.faqCategory} ${faqmenu === i ? faq.on : ''} `}
-              onClick={() => qnaclick(i)}
-            >
-              {e.name}
-            </button>
-          ))
-        }
-      </div>
-      <div id="faq_list" className='text-center'>
-        {
-          faqlist[faqmenu].list.split('|').map((v, i) => (
-            <p key={`faq-item${i}`}>
-              {v}
-            </p>
-          ))
-        }
-      </div>
-    </section>
-    
-  );
-  
-}
+    const handleQuestionClick = (index) => {
+        setActiveQuestionIndex(activeQuestionIndex === index ? null : index); // 질문 클릭 시 인덱스 토글
+    };
 
-export default Faq;
+    return (
+        <section>
+            <p className="titleText">FAQ</p>
+            <div id="faq-categories" className="d-flex justify-content-center mb-4">
+                {faqlist.map((item, index) => (
+                    <button
+                        key={index}
+                        className={`${faq.faqCategory} ${activeIndex === index ? faq.on : ''}`} // 활성화된 카테고리에 'on' 클래스 추가
+                        onClick={() => handleCategoryClick(index)} // 클릭 이벤트 핸들러
+                        data-index={index} // data-index 속성 추가
+                    >
+                        {item.name}
+                    </button>
+                ))}
+            </div>
+            <div className={faq.faq_content}>
+                {faqlist[activeIndex].list.map((faqItem, idx) => (
+                    <div key={idx} className='container'>
+                        <p onClick={() => handleQuestionClick(idx)} className={`${faq.faqItem} d-flex justify-content-between align-items-center`}>
+                            {faqItem.question}
+                            {activeQuestionIndex === idx ? (
+                                <i className="bi bi-chevron-up"></i>
+                            ) : (
+                                <i className="bi bi-chevron-down"></i>
+                            )}
+                        </p>
+                        {activeQuestionIndex === idx && (
+                            <p className={faq.answer}>{faqItem.answer}</p> // 답변 표시
+                        )}
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+};
 
+export default FAQ;
