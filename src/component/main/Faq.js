@@ -1,25 +1,27 @@
 import React, { useState } from 'react';
 import faq from '../../scss/layout/faq.module.scss'; // CSS 모듈 가져오기
-import faqlist from '../../data/faqDB.json'
+import faqlistData from '../../data/faqDB.json'; // 데이터 가져오기
 
-
-function FAQ (){
+// FAQ 컴포넌트
+const FAQ = function() {
     const [activeIndex, setActiveIndex] = useState(0); // 활성화된 카테고리 인덱스
     const [activeQuestionIndex, setActiveQuestionIndex] = useState(null); // 활성화된 질문 인덱스
 
-    const handleCategoryClick = (index) => {
+    const handleCategoryClick = function(index) {
         setActiveIndex(index); // 클릭된 카테고리로 인덱스 업데이트
         setActiveQuestionIndex(null); // 카테고리 변경 시 질문 인덱스 초기화
     };
 
-    const handleQuestionClick = (index) => {
+    const handleQuestionClick = function(index) {
         setActiveQuestionIndex(activeQuestionIndex === index ? null : index); // 질문 클릭 시 인덱스 토글
     };
+
+    const faqlist = faqlistData.faqlist; // JSON 데이터에서 faqlist 추출
 
     return (
         <section>
             <p className="titleText">FAQ</p>
-            <div id="faq-categories" className="d-flex justify-content-center mb-4">
+            <div id="faq-categories" className="d-flex justify-content-center mb-5">
                 {faqlist.map((item, index) => (
                     <button
                         key={index}
@@ -33,9 +35,9 @@ function FAQ (){
             </div>
             <div className={faq.faq_content}>
                 {faqlist[activeIndex].list.map((faqItem, idx) => (
-                    <div key={idx} className='container'>
+                    <div key={idx} className='container hashtitle mb-3'>
                         <p onClick={() => handleQuestionClick(idx)} className={`${faq.faqItem} d-flex justify-content-between align-items-center`}>
-                            {faqItem.question}
+                            {faqItem.question} {/* question 속성 사용 */}
                             {activeQuestionIndex === idx ? (
                                 <i className="bi bi-chevron-up"></i>
                             ) : (
@@ -43,7 +45,16 @@ function FAQ (){
                             )}
                         </p>
                         {activeQuestionIndex === idx && (
-                            <p className={faq.answer}>{faqItem.answer}</p> // 답변 표시
+                            <div className='d-flex flex-column text-start border-bottom border-white'>
+                                {faqItem.answer.split('\n').map((line, index) => (
+                                    <div className='mb-3'>
+                                    <span key={index}>
+                                        {line}
+                                        <br />
+                                    </span>
+                                    </div>
+                                ))}
+                            </div>
                         )}
                     </div>
                 ))}
