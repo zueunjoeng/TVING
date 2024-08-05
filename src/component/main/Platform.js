@@ -12,7 +12,8 @@ import platf from '../../scss/layout/platform.module.scss'
 
 function Platform() {
     return (
-        <section> 
+        <section>
+            <div className={platf.backimg}>
             <p className='titleText mb-0'><span>NO. 1</span> K-CONTENTS PLATFORM </p>
             <p className='hashTitle mb-5'># 티빙오리지널 #드라마 #예능 #영화 #kbo리그</p>
         <Platdiv>       
@@ -55,6 +56,7 @@ function Platform() {
         <p className={platf.titlesub}>무제한으로 스트리밍해 보세요.</p>
         <div className='d-flex justify-content-center align-items-center mt-5'>
             <Link to='/moremedia' className='textBtn mt-3'>티빙 스트리밍</Link>
+        </div>
         </div>
         </section>
     );

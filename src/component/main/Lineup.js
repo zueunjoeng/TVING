@@ -5,6 +5,7 @@ import {Linediv} from '../../commonui/lineupui'
 function Lineup() {
   return (
     <section>
+      <div className={lineup.backimg}>
       <p className='titleText'>이달의 라인업</p>
       <Linediv>
       <iframe 
@@ -16,6 +17,7 @@ function Lineup() {
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
       </iframe>
       </Linediv>
+    </div>
     </section>
   )
 }

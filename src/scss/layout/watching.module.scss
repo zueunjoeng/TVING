@@ -1,3 +1,10 @@
 .txt{
     color:#FF153C;
 }
+
+.backimg {
+    background-image: url('../../../public/img/bubble/line.png'); /* 이미지 경로 확인 *//* 이미지를 섹션 전체에 맞게 조절 */
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 500px;
+}
