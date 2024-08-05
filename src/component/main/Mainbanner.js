@@ -22,6 +22,7 @@ function Mainbanner() {
                 </div>
                 <div className="d-flex"> 
                     <img src="./img/mainbanner/post02.png" alt="Image 2"  className={`mt-1 me-1 ${mainb.image_left}`}/>
+                    <img src="./img/mainbanner/post02.png" alt="Image 2"  className={`mt-1 me-1 ${mainb.image_left}`}/>
                     <img src="./img/mainbanner/post02.png" alt="Image 2"  className={`mt-1 ${mainb.image_left}`}/>
                 </div>
             
@@ -79,6 +80,9 @@ function Mainbanner() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)} // 입력값 상태 업데이트
                     />
+                        </div>
+                        <div className='d-flex mt-1 align-items-center'>
+                            <Link to="idpassword" className='black12 text-white'>아이디/비밀번호찾기</Link>
                         </div>
                         <div className='d-flex mt-1 align-items-center'>
                             <p className='me-5 black12'>TVING 계정이 없다면?</p>
