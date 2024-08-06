@@ -3,7 +3,7 @@ import faq from '../../scss/layout/faq.module.scss'; // CSS 모듈 가져오기
 import faqlistData from '../../data/faqDB.json'; // 데이터 가져오기
 
 // FAQ 컴포넌트
-const FAQ = function() {
+function FAQ() {
     const [activeIndex, setActiveIndex] = useState(0); // 활성화된 카테고리 인덱스
     const [activeQuestionIndex, setActiveQuestionIndex] = useState(null); // 활성화된 질문 인덱스
 
@@ -35,7 +35,7 @@ const FAQ = function() {
             </div>
             <div className={faq.faq_content}>
                 {faqlist[activeIndex].list.map((faqItem, idx) => (
-                    <div key={idx} className='container hashtitle mb-3'>
+                    <div key={idx} className='container hashtitle mb-3 d-flex flex-column justify-content-between'>
                         <p onClick={() => handleQuestionClick(idx)} className={`${faq.faqItem} d-flex justify-content-between align-items-center`}>
                             {faqItem.question} {/* question 속성 사용 */}
                             {activeQuestionIndex === idx ? (

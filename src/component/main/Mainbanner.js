@@ -26,16 +26,17 @@ function Mainbanner() {
     return (
         <section>
             <div className={mainb.mainbanner}>
-                <div className="d-flex">
-                    <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 me-1 ${mainb.image_right}`} />
-                    <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 ${mainb.image_right}`} />
-                </div>
-                <div className="d-flex">
-                    <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
-                    <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
-                    <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 ${mainb.image_left}`} />
-                </div>
-
+                
+                    <div className="d-flex">
+                        <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 me-1 ${mainb.image_right}`} />
+                        <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 ${mainb.image_right}`} />
+                    </div>
+                    <div className="d-flex">
+                        <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
+                        <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
+                        <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 ${mainb.image_left}`} />
+                    </div>
+              
                 <div className={mainb.overlay}></div>
                 <div className='d-flex'>
                     <img src="./img/mainbanner/tent.jpg" alt="" className={mainb.maintent} />

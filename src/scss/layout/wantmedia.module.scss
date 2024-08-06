@@ -31,11 +31,34 @@
     height: 85px;
     color:black;
 }
-
+.glassdiv{
+    width: auto;
+    height: auto;
+}
 .backimg {
     background-image: url('../../../public/img/bubble/bubble3.png'); /* 이미지 경로 확인 *//* 이미지를 섹션 전체에 맞게 조절 */
     background-position: left;
     background-repeat: no-repeat;
     height: 800px;
     background-position: -3% 60%;
+}
+
+@media (max-width:1200px) {
+   .glassmorphism{
+    width: 1000px;
+    height: 553px;
+   }
+   .imgsize{
+    width: 20px;
+    height: 20px;
+   }
+   .glassdiv{
+    font-size: 15px;
+    width: 830px;
+    height: 350px;
+   }
+   .mediaform{
+    width: 830px;
+    height: 65px;
+   }
 }

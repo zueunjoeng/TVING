@@ -12,3 +12,10 @@
     height: 900px;
     background-position: 0% 0%;
 }
+
+@media (max-width:1200px) {
+    .backimg{
+        width: auto;
+        height: 800px;
+    }
+ }

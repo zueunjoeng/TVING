@@ -8,3 +8,11 @@
     background-repeat: repeat-x;
     height: 500px;
 }
+
+@media (max-width:1200px) {
+    .backimg img{
+        width: 480px;
+        height: 350px;
+    }
+  
+  }

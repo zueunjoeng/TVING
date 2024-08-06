@@ -5,3 +5,12 @@
     height: 900px;
     background-position:100% 5%
 }
+@media (max-width:1200px) {
+    iframe{
+        width:1000px;
+        height: 563px;
+    }
+    .backimg{
+        height: 700px;
+    }
+}
