@@ -42,14 +42,14 @@ function Footer() {
         </Link>
         </div>
         <div>
-            <p className='text-end noto15'>
+            <p className={`text-end noto15 ${ft.footerinfo}`}>
             대표이사 : 최주희 | 사업자정보확인 사업자등록번호:188-88-01893 | 통신판매신고번호:2020-서우라포-3641호<br/>
             사업장 : 서울특별시 마포구 상암산로 34, dmc디지털큐브15층 (상암동) | 호스팅신고번호: 씨제이올리브네트웍스(주)<br/>
             고객센터/1:1 게시판 문의: 평일09시-17시/점심시간 13-14시 | 대표메일 tving@cj.net | 전화번호ARS 1670-1525 챗봇/채팅상담연결<br/>
             ENM시청자 상담실(평성문의 및 시청자 의견) 080 -080-0780<br/>
             Mnet 고객센터(방송편성문의) 1855-1631<br/>
             </p>
-            <p className='mt-5 mb-3 text-end noto15'>Copyright ©주식회사 티빙 All right reserved.</p>
+            <p className={`mt-3 mb-3 text-end noto15 ${ft.footerinfo}`}>Copyright ©주식회사 티빙 All right reserved.</p>
             
         </div>
        </div>

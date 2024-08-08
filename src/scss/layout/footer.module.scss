@@ -6,4 +6,19 @@
 
 .word{
     word-spacing: 2em;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.footerinfo{
+    font-size: 0.7em;
+}
+
+@media (max-width:1200px) {
+    .noto20 Link{
+        font-size: 1rem !important;
+    }
+    .noto15{
+        font-size: 0.8rem !important;
+    }
 }

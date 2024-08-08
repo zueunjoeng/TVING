@@ -69,9 +69,9 @@ function Mainbanner() {
 
                     <div className={mainb.login}>
                         <div className={mainb.logintxt}><p>당신의 즐거움에<br /> <span>로그인</span> 하세요.</p></div>
-                        <form className={mainb.loginform} onSubmit={handleSubmit}> {/* form 태그로 감싸기 */}
+                        <form className={mainb.loginform} onSubmit={handleSubmit}>
                             <div className='d-flex flex-column black15'>
-                                <label htmlFor="username" className='mb-1'>아이디</label>
+                                <label htmlFor="username" className='ms-2 mb-1'>아이디</label>
                                 <input
                                     type="text"
                                     id="username"
@@ -82,7 +82,7 @@ function Mainbanner() {
                                 />
                             </div>
                             <div className='d-flex flex-column black15'>
-                                <label htmlFor="password" className='mb-1'>비밀번호</label>
+                                <label htmlFor="password" className='ms-2 mb-1'>비밀번호</label>
                                 <input
                                     type="password"
                                     id="password"
@@ -93,10 +93,10 @@ function Mainbanner() {
                                 />
                             </div>
                             <div className='d-flex mt-1 align-items-center'>
-                                <Link to="idpassword" className='black12 text-white'>아이디/비밀번호찾기</Link>
+                                <Link to="idpassword" className='ms-2 black12 text-white'>아이디/비밀번호찾기</Link>
                             </div>
                             <div className='d-flex mt-1 align-items-center'>
-                                <p className='me-5 black12'>TVING 계정이 없다면?</p>
+                                <p className='ms-2 me-5 black12'>TVING 계정이 없다면?</p>
                                 <Link to="signup" className='black15 text-white'>회원가입</Link>
                             </div>
                             <button type="submit" className={`black15 mt-3 ${mainb.tvinglogin}`}>티빙 로그인</button>

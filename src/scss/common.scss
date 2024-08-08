@@ -57,6 +57,7 @@ section{
     font-size: 20px;
     background-color: #FF153C;
     padding: 1rem;
+    border: none;
     border-radius: 50px;
     width: 286px;
     display: flex;
@@ -69,13 +70,14 @@ section{
 }
 .text{
     font-size : 25px;
+    font-weight: 400;
 }
 .noto12{
     font-size:12px;
 }
 .noto15{
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .noto20{
     font-family: 'Noto Sans KR';
@@ -94,16 +96,12 @@ section{
 .black12{
     font-family: 'Black Han Sans';
     font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 100;
 }
 .black15{
     font-family: 'Black Han Sans';
     font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 200;
 }
 
 
@@ -227,3 +225,18 @@ section{
   .mx-n5 {
     margin-left: -3rem !important;
   }
+
+  @media (max-width:1200px) {
+    .noto20{
+        font-size: 1rem !important;
+    }
+    .noto15{
+        font-size: 0.8rem !important;
+    }
+    .noto40{
+      font-size: 2rem;
+    }
+    .text{
+      font-size: 1.25rem;
+    }
+}

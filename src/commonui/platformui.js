@@ -13,7 +13,13 @@ export const Platdiv = styled.div`
 `;
 
 export const Containdiv =styled.div`
+  width:calc(100vw - 30px);
+  
+@media (min-width:1024px) {
     width: 800px;
+}
+
+   
 
 `;
 

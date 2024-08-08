@@ -119,20 +119,9 @@
     border-radius: 200px 200px 0 0;
 }
 
-@media (max-width:1200px) {
-    .login{
-        display: none;
-    }
-    .tentlogo, .tentlink{
-        left:35%;
-    }
-    .logoinfo, .tentText{
-        left:37.5%;
-    }
-}
 .loginform{
     position: absolute;
-    top: 28%;
+    top: 26%;
     right: 0;
     left:19%;
     bottom: 0;
@@ -148,11 +137,13 @@
     font-family: 'Black Han Sans';
     font-size: 35px;
     position: absolute;
-    top: 10%;
+    top: 12%;
     right: 0;
     left:0;
     bottom: 0;
     text-align: center;
+    font-weight: 200;
+    line-height: 40px;
 }
 .logintxt span{
     color:#FF153C;
@@ -197,4 +188,16 @@ input::placeholder {
 }
 .tvinglogin:hover {
     background-color: #FF869A;
+}
+
+@media (max-width:1200px) {
+    .login{
+        display: none;
+    }
+    .tentlogo, .tentlink{
+        left:35%;
+    }
+    .logoinfo, .tentText{
+        left:37.5%;
+    }
 }

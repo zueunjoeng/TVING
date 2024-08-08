@@ -45,7 +45,7 @@ function FAQ() {
                             )}
                         </p>
                         {activeQuestionIndex === idx && (
-                            <div className='d-flex flex-column text-start border-bottom border-white'>
+                            <div className={`${faq.faqanswer} d-flex flex-column text-start border-bottom border-white`}>
                                 {faqItem.answer.split('\n').map((line, index) => (
                                     <div className='mb-3'>
                                     <span key={index}>
