@@ -117,6 +117,7 @@
     z-index: 12;
     background-color: black; 
     border-radius: 200px 200px 0 0;
+    font-weight: 600;
 }
 
 .loginform{
@@ -149,15 +150,22 @@
     color:#FF153C;
 }
 .logindiv{
-    background-color: white;
-    width: 188px;
-    height: 37px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    margin-top: 7px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 7px 10px 0;
+
+    img{
+        width: 30px;
+        height: 30px;
+    }
 }
+
+
 input[type="text"],
 input[type="password"] {
     padding: 10px;
@@ -166,7 +174,6 @@ input[type="password"] {
     border: none;
     outline: none;
     width:226px;
-    height: 49px;
 }
 input::placeholder {
     color: #ccc;
@@ -188,6 +195,13 @@ input::placeholder {
 }
 .tvinglogin:hover {
     background-color: #FF869A;
+}
+
+.simplelogin{
+    display: block;
+    width: 4.3rem;
+    height: 0.125rem;
+    background-color: white;
 }
 
 @media (max-width:1200px) {

@@ -26,7 +26,7 @@ function Mainbanner() {
     return (
         <section>
             <div className={mainb.mainbanner}>
-                
+                <div className='container'>
                     <div className="d-flex">
                         <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 me-1 ${mainb.image_right}`} />
                         <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 ${mainb.image_right}`} />
@@ -36,9 +36,9 @@ function Mainbanner() {
                         <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
                         <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 ${mainb.image_left}`} />
                     </div>
-              
+                </div>
                 <div className={mainb.overlay}></div>
-                <div className='d-flex'>
+                <div className='d-flex container'>
                     <img src="./img/mainbanner/tent.jpg" alt="" className={mainb.maintent} />
                     <img src="./img/mainbanner/tentlogo01.png" alt="" className={mainb.tentlogo} />
                     <div className={`d-flex align-items-center ${mainb.logoinfo}`}>
@@ -103,13 +103,12 @@ function Mainbanner() {
                         </form>
 
                         <div className={`d-flex flex-column align-items-center justify-content-center mt-3 ${mainb.sublogin}`}>
-                            <p>간편 로그인</p>
-                            <div>
+                            <p className='d-flex align-items-center'><span className={`${mainb.simplelogin} me-2`}></span>간편 로그인<span className={`${mainb.simplelogin} ms-2`}></span></p>
+                            <div className='d-flex w-50'>
                                 {loginOptions.map((option, index) => (
                                     <div className={mainb.logindiv} key={index}>
                                         <Link to={option.link} className='black12'>
-                                            <img src={option.icon} alt={`${option.name} 아이콘`} className='me-3' />
-                                            {option.name} 계정으로 로그인
+                                            <img src={option.icon} alt={`${option.name} 아이콘`} />
                                         </Link>
                                     </div>
                                 ))}
