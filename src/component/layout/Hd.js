@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Hd() {
     return (
         <header id="hd">
-        <div className="border-white border-bottom">
+        <div>
             <div className={`d-flex justify-content-between align-items-center mx-5 ${hd.momdiv}`}>
                 <div className={hd.logodiv}>
                     <Link to="/">

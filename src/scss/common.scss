@@ -44,21 +44,21 @@ section{
     font-family: 'Noto Sans KR';
     font-size: 1.875rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 400;
     line-height: normal;
     text-align: center;
 }
 .textBtn{
     font-family: 'Noto Sans KR';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 300;
     line-height: normal;
     color:white;
     font-size: 20px;
     background-color: #FF153C;
     padding: 1rem;
     border: none;
-    border-radius: 50px;
+    // border-radius: 50px;
     width: 286px;
     display: flex;
     justify-content: center;
@@ -81,9 +81,9 @@ section{
 }
 .noto20{
     font-family: 'Noto Sans KR';
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     line-height: normal;
     
     @media (max-width: 567px){
@@ -225,6 +225,9 @@ section{
   .my-n5 {
     margin-bottom: -3rem !important;
   }
+  .zup{
+    z-index: 100000;
+  }
   
   .ml-n5,
   .mx-n5 {
@@ -245,3 +248,16 @@ section{
 //       font-size: 1.25rem;
 //     }
 // }
+
+.dim:after{
+  content: "";
+    position: absolute; /* 절대 위치로 설정 */
+    display: block;
+    top: 0;
+    right: 0;
+    left:0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* 반투명 검정색 */
+    z-index: 10; /* 오버레이가 다른 요소 위에 표시되도록 설정 */
+
+}

@@ -10,12 +10,16 @@
     }
 }
 .text{
-        color:white;
-        background-color: #FF153C;
+        color:#FF153C;
+        border: 1px solid #FF153C;
         margin:0.2rem;
         padding:0.2rem 0.8rem;
         text-decoration: none;
+    &:hover{
+        background-color: #FF153C;
+        color: white;
     }
+}
 .bi{
         display: block;
         font-size: 1.5rem;

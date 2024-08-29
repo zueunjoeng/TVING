@@ -36,40 +36,25 @@
     }
   }
 
-  .overlay {
-    position: absolute; /* 절대 위치로 설정 */
-    top: 0;
-    right: 0;
-    left:0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* 반투명 검정색 */
-    z-index: 10; /* 오버레이가 다른 요소 위에 표시되도록 설정 */
-}
+//   .overlay {
+//     position: absolute; /* 절대 위치로 설정 */
+//     top: 0;
+//     right: 0;
+//     left:0;
+//     bottom: 0;
+//     background-color: rgba(0, 0, 0, 0.8); /* 반투명 검정색 */
+//     z-index: 10; /* 오버레이가 다른 요소 위에 표시되도록 설정 */
+// }
 
 
 .maintent{
-    position: absolute;
-    top: 10%;
-    right: 0;
-    left:3%;
-    bottom: 0;
-    z-index: 12;
+   
 }
 .tentlogo{
-    position: absolute;
-    top: 8%;
-    right: 0;
-    left:25%;
-    bottom: 0;
-    z-index: 12;
+   
 }
 .logoinfo{
-    position: absolute;
-    top:0;
-    right: 0;
-    left:26.5%;
-    bottom: 45%;
-    z-index: 12;
+   
 }
 .age{
     display: inline-block;
@@ -86,62 +71,30 @@
     height: 21px;
 }
 .tentText{
-    position: absolute;
-    top: 35%;
-    right: 0;
-    left:26.5%;
-    bottom: 0;
-    z-index: 12;  
+   
 }
 .tentlink{
-    width: 347px;
-    height: 70px;
-    position: absolute;
-    top: 70%;
-    right: 0;
-    left:26.5%;
-    bottom: 0;
-    z-index: 12;  
+  
 }
 .bi{
     font-size: 25px;
 }
 .login{
-    width: 364px;
-    height: 610px;
-    position: absolute;
-    top: 9%;
-    right: 0;
-    left:70%;
-    bottom: 0;
-    z-index: 12;
+   
     background-color: black; 
     border-radius: 200px 200px 0 0;
     font-weight: 600;
 }
 
 .loginform{
-    position: absolute;
-    top: 26%;
-    right: 0;
-    left:19%;
-    bottom: 0;
+   
 }
 .sublogin{
-    position: absolute;
-    top:68%;
-    right: 0;
-    left:1%;
-    bottom: 0;
+   
 }
 .logintxt{
     font-family: 'Black Han Sans';
     font-size: 35px;
-    position: absolute;
-    top: 12%;
-    right: 0;
-    left:0;
-    bottom: 0;
     text-align: center;
     font-weight: 200;
     line-height: 40px;
@@ -170,7 +123,6 @@ input[type="text"],
 input[type="password"] {
     padding: 10px;
     font-size: 16px;
-    border-radius: 50px;
     border: none;
     outline: none;
     width:226px;
@@ -184,7 +136,6 @@ input::placeholder {
     color: #fff;
     background-color: #FF153C;
     border: none;
-    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
@@ -197,12 +148,18 @@ input::placeholder {
     background-color: #FF869A;
 }
 
-.simplelogin{
-    display: block;
-    width: 4.3rem;
-    height: 0.125rem;
-    background-color: white;
+.sublogin{
+   .simplelogin{
+        display: block;
+        width: 4.3rem;
+        height: 0.5px;
+        background-color: white;
+    } 
+    p{
+        font-weight: 300;
+    }
 }
+
 
 @media (max-width:1200px) {
     .login{
