@@ -85,7 +85,12 @@ section{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
+    @media (max-width: 567px){
+      font-size: 1rem;
+    }
 }
+
 .noto40{
     font-family: 'Noto Sans KR';
     font-size: 2.5rem;
@@ -226,17 +231,17 @@ section{
     margin-left: -3rem !important;
   }
 
-  @media (max-width:1200px) {
-    .noto20{
-        font-size: 1rem !important;
-    }
-    .noto15{
-        font-size: 0.8rem !important;
-    }
-    .noto40{
-      font-size: 2rem;
-    }
-    .text{
-      font-size: 1.25rem;
-    }
-}
+//   @media (max-width:1200px) {
+//     .noto20{
+//         font-size: 1rem !important;
+//     }
+//     .noto15{
+//         font-size: 0.8rem !important;
+//     }
+//     .noto40{
+//       font-size: 2rem;
+//     }
+//     .text{
+//       font-size: 1.25rem;
+//     }
+// }
