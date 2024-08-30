@@ -3,7 +3,7 @@ import mainb from '../../scss/layout/mainbanner.module.scss';
 import { Link } from 'react-router-dom';
 import loginData from '../../data/mainDB.json'; // JSON 파일 경로
 
-function Mainbanner() {
+function Mainbanner({btn}) {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [loginOptions, setLoginOptions] = useState([]); // 로그인 옵션 상태
@@ -26,13 +26,12 @@ function Mainbanner() {
     return (
         <section>
             <div className={`${mainb.mainbanner} d-flex flex-column justify-content-center`}>
-                <div className='dim position-absolute top-0  start-0 w-100' >
+                <div className='dim position-absolute' >
                     <div className="d-flex">
                         <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 me-1 ${mainb.image_right}`} />
                         <img src="./img/mainbanner/post01.png" alt="Image 1" className={`mt-1 ${mainb.image_right}`} />
                     </div>
                     <div className="d-flex">
-                        <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
                         <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 me-1 ${mainb.image_left}`} />
                         <img src="./img/mainbanner/post02.png" alt="Image 2" className={`mt-1 ${mainb.image_left}`} />
                     </div>
@@ -68,7 +67,7 @@ function Mainbanner() {
                                     </p>
                                 </div>
                                 <div className={`${mainb.tentlink} d-flex align-items-center justify-content-start mt-5`}>
-                                    <Link to='/Outside.the.Tent.is.Europe' className='textBtn'>시즌 4 : 1화 시청하기<i className={`${mainb.bi} bi-chevron-right ms-2`}></i></Link>
+                                    <Link to='/Outside.the.Tent.is.Europe' className={btn}>시즌 4 : 1화 시청하기<i className={`${mainb.bi} bi-chevron-right ms-2`}></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -100,12 +99,12 @@ function Mainbanner() {
                                 <button type="submit" className={` mt-3 ${mainb.tvinglogin}`}>티빙 로그인</button>
                             </div>
                             <div className='d-flex ms-2 mt-2 align-items-start'>
-                                    <Link to="idpassword" className='noto15 text-white'>아이디 / 비밀번호찾기</Link>
+                                    <Link to="idpassword" className='noto12 text-white'>아이디 / 비밀번호찾기</Link>
                             </div>
                             
                             <div className='d-flex align-items-center'>
-                                <p className='ms-2 me-3 noto15'>TVING 계정이 없다면?</p>
-                                <Link to="signup" className=' text-white'>회원가입</Link>
+                                <p className='ms-2 me-5 noto12'>TVING 계정이 없다면?</p>
+                                <Link to="signup" className='text-white'>회원가입</Link>
                             </div>
                             
                         </form>

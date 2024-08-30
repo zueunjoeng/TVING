@@ -1,59 +1,102 @@
 
-.subs{
-    display: inline-block;
-    background-color: #2F2F2F;
+.adv{
+    // background-color: #2F2F2F;
+    border: #2F2F2F 5px solid;
     padding: 15px 25px;
-    border-radius: 30px;
-    position: relative;
+    // border-radius: 30px;
+    margin-right: 22rem;
+    width:345px;
+    text-align: center;
+    font-weight: 500;   
+    
+    &:hover{
+        background-color: #2F2F2F;
+        width: 80rem;
+        margin:0;
+        z-index: 1;
+        .submoney {
+            display: block; 
+            }
+    }
+}
+
+.pre{
+       // background-color: #2F2F2F;
+       border: #2F2F2F 5px solid;
+       padding: 15px 25px;
+       // border-radius: 30px;
+       margin-right:10rem;
+       width:345px;
+       text-align: center;
+       font-weight: 500; 
+       &:hover{
+        background-color: #2F2F2F;
+        width: 80rem;
+        margin:0;
+        z-index: 1;
+        .submoney {
+            display: block; 
+            }
+    }
+}
+.stan{
+    // background-color: #7F7F7F;
+    border: #7F7F7F 5px solid;
+    padding: 15px 25px;
+    // border-radius: 30px;
+    margin-right: 15rem;
     width:345px;
     text-align: center;
     font-weight: 500;
+    &:hover{
+        background-color: #7F7F7F;
+        width: 80rem;
+        margin:0;
+        z-index: 1;
+        .submoney {
+            display: block; 
+            }
+    }
 }
-.sub_s{
-    display: inline-block;
-    background-color: #7F7F7F;
-    padding: 15px 25px;
-    border-radius: 30px;
-    position: relative;
-    width:345px;
-    text-align: center;
-    font-weight: 500;
+
+.adv_text, .pre_text, .stan_text{
+    display: block;
 }
+.adv:hover ~ .adv_text {
+    display: none !important;
+}
+.pre:hover ~ .pre_text {
+    display: none !important;
+}
+.stan:hover ~ .stan_text {
+    display: none !important;
+}
+
+
+.submoney {
+display: none; 
+}
+
+
 .sub_s span{
     text-align: right;
 }
 
-.submoney {
-    display: none; /* 기본적으로 숨깁니다 */
-}
-  
-.title:hover{
-    .sub_s, .subs{
-        position: absolute;
-        width:1400px;
-        text-align: left;
-    }
-    .submoney{
-        display: block;
-        position: absolute;    
-        text-align: right;
-        right:15%;
-    }
-}
 
 
-@media (max-width:1200px) {
-    .title:hover{
-        .sub_s, .subs{
-            position: absolute;
-            width:1100px;
-            text-align: left;
-        }
-        .submoney{
-            display: block;
-            position: absolute;    
-            text-align: right;
-            right:8%;
-        }
-    }
-}
+
+// @media (max-width:1200px) {
+//     .title:hover{
+//         .sub_s, .subs{
+//             position: absolute;
+//             width:1100px;
+//             text-align: left;
+//         }
+//         .submoney{
+//             display: block;
+//             position: absolute;    
+//             text-align: right;
+//             right:8%;
+//         }
+//     }
+// }

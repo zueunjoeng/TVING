@@ -17,7 +17,7 @@ function Watching() {
       </p>
       <div className={watching.backimg}>
         <div className='container d-flex'>
-          <div className='col-5' data-aos="fade-up">
+          <div className='col-5 d-flex flex-column justify-content-center' data-aos="fade-up">
             <img src="/img/consoleimg/pcmedia.png" alt="PC Media" />
             <p className='hashTitle mt-4'>
               #스마트폰 #테블릿 #PC #TV<br />
@@ -25,7 +25,7 @@ function Watching() {
             </p>
           </div>
           <div className='col-2'></div>
-          <div className='col-5' data-aos="fade-up">
+          <div className='col-5 d-flex flex-column justify-content-center' data-aos="fade-up">
             <img src="/img/consoleimg/scence.png" alt="Scene" />
             <p className='hashTitle mt-4'>
               #<span className={watching.txt}>Quick VOD</span><br />

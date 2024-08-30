@@ -14,10 +14,8 @@ export const Platdiv = styled.div`
 
 export const Containdiv =styled.div`
   width:calc(100vw - 30px);
-  
-@media (min-width:1024px) {
-    width: 800px;
-}
+  max-width: 1280px;
+
 
    
 
@@ -30,11 +28,10 @@ export const Slidediv = styled.div`
     font-size: 18px;
     color: #fff;
     background:  transparent;
-    width: 1400px;
-    padding-left: 1.1rem;
+    width: 100%;
 `;
 
 export const Imgdiv = styled.img`
-    width: 769px;
-    height: 430px;
+    width: 100%;
+    height: 27rem;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import wantm from '../../scss/layout/wantmedia.module.scss';
 
-function Wantmedia() {
+function Wantmedia({btn}) {
     return (
         <section>
             <div className={wantm.backimg}>
@@ -25,7 +25,7 @@ function Wantmedia() {
                             </div>
 
                             <div className="d-flex justify-content-center align-items-center">
-                                <button type="submit" className="textBtn mt-4">신청하기</button>
+                                <button type="submit" className={btn}>신청하기</button>
                             </div>
                         </div>
                     </div>

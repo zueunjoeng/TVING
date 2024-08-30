@@ -7,13 +7,13 @@
 
 .image_left {
     top: 0;
-    left: -200px; /* 이미지의 초기 위치 설정 */
+    left: -12.5rem;
     animation: moveLeft 180s linear infinite; /* 왼쪽으로 움직이는 애니메이션 */
   }
   
   .image_right {
     top: 0;
-    right: -200px; /* 이미지의 초기 위치 설정 */
+    right: -12.5rem; /* 이미지의 초기 위치 설정 */
     animation: moveRight 200s linear infinite; /* 오른쪽으로 움직이는 애니메이션 */
   }
   
@@ -23,7 +23,7 @@
       transform: translateX(-100vw);
     }
     100% {
-      transform: translateX(100vw); /* 전체 화면 너비만큼 이동 */
+      transform: translateX(0); /* 전체 화면 너비만큼 이동 */
     }
   }
   
@@ -65,7 +65,6 @@
     padding: 0 3px;
 }
 .logounder{
-    border-radius: 5px;
     border: 0.5px solid white;;
     width: 53px;
     height: 21px;

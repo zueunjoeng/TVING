@@ -26,9 +26,9 @@ section{
 }
 .titleText{
     font-family: 'Noto Sans KR';
-    font-size: 3.75rem;
+    font-size: 2.5rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: normal;
     text-align: center;
     display: flex;
@@ -39,7 +39,14 @@ section{
 .titleText span{
     color: #FF153C
 }
-
+.hashTitle_platf{
+  font-family: 'Noto Sans KR';
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
 .hashTitle{
     font-family: 'Noto Sans KR';
     font-size: 1.875rem;
@@ -48,36 +55,21 @@ section{
     line-height: normal;
     text-align: center;
 }
-.textBtn{
-    font-family: 'Noto Sans KR';
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    color:white;
-    font-size: 20px;
-    background-color: #FF153C;
-    padding: 1rem;
-    border: none;
-    // border-radius: 50px;
-    width: 286px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.textBtn:hover{
-    background-color:#FF869A;
-}
 .text{
+  font-family: 'Noto Sans KR';
     font-size : 25px;
     font-weight: 400;
 }
 .noto12{
+  font-family: 'Noto Sans KR';
     font-size:12px;
+    font-weight: 200;
 }
 .noto15{
+  font-family: 'Noto Sans KR';
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
 }
 .noto20{
     font-family: 'Noto Sans KR';
@@ -93,9 +85,9 @@ section{
 
 .noto40{
     font-family: 'Noto Sans KR';
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 300;
     line-height: normal;
 }
 .black12{
@@ -260,4 +252,60 @@ section{
     background-color: rgba(0, 0, 0, 0.8); /* 반투명 검정색 */
     z-index: 10; /* 오버레이가 다른 요소 위에 표시되도록 설정 */
 
+}
+
+.swiper-c-dim{
+  .swiper-slide{
+    background-color: black !important;
+    &.swiper-slide-active{
+      img{
+        opacity: 1;
+      }
+    }
+    img{
+      opacity: 0.5;
+    }
+  }
+
+}
+.swiper-c-frame{
+  .swiper-slide{
+    background-color: black !important;
+    &.swiper-slide-active{
+      border:#FF153C 5px solid;
+      img{
+        opacity: 1;
+      }
+    }
+    img{
+      opacity: 0.5;
+    }
+  }
+  
+}
+
+.textBtn{
+  margin-top: 1rem;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color:#FF153C;
+    font-size: 20px;
+    // background-color: #FF153C;
+    background-color: transparent;
+    padding: 1rem;
+    border: #FF153C 1px solid;
+    // border-radius: 50px;
+    width: 286px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  &:hover{
+      // background-color:#FF869A;
+      background-color:#FF153C;
+      color:white
+  }
 }

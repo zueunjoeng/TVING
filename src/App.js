@@ -15,11 +15,11 @@ function App() {
   return (
     <div className="App">
          <Hd></Hd>
-         <Mainbanner></Mainbanner>
-         <Platform></Platform> 
+         <Mainbanner btn="textBtn"></Mainbanner>
+         <Platform cls="swiper-c-dim" ea="1.8" btn="textBtn"></Platform> 
+         <Service btn="textBtn"></Service>
          <Lineup></Lineup>
-         <Wantmedia></Wantmedia> 
-         <Service></Service>
+         <Wantmedia btn="textBtn"></Wantmedia> 
          <Watching></Watching> 
          <Faq></Faq>
          <Quick></Quick>
