@@ -1,5 +1,5 @@
 .titlesub{
-    font-size : 45px;
+    font-size : 2.8rem;
     text-align: center;
 }
 .titlesub span{
@@ -7,7 +7,7 @@
 }
 .backimg {
     position: relative;
-    height: 900px;
+    height: 56rem;
     overflow: hidden; 
   }
   
@@ -38,9 +38,21 @@
     }
   }
 
-@media (max-width:1200px) {
-    .backimg{
-        width: auto;
-        height: 800px;
+  .swiper576{
+    display: none;
+  }
+
+@media (max-width:576px) {
+    .titlesub{
+      font-size : 1.6rem;
+    }
+    .backimg {
+    height: 47.5rem;
+    }
+    .swiper1920{
+      display: none;
+    }
+    .swiper576{
+      display: block;
     }
  }

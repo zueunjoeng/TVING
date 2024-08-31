@@ -37,14 +37,14 @@ function Mainbanner({btn}) {
                     </div>
                 </div>
                
-                <div className='d-flex ps-xl-3 me-xl-3 justify-content-around position-relative zup'>
-                    <div className="leftBanner d-flex align-items-center">
+                <div className='d-flex px-xl-5 mx-xl-5 justify-content-between position-relative zup'>
+                    <div className={`${mainb.leftBanner} d-flex align-items-center`}>
                         <img src="./img/mainbanner/tent.jpg" alt="" className={mainb.maintent} />
                    
                         <div className='ps-5'>
                             <img src="./img/mainbanner/tentlogo01.png" alt="" className={mainb.tentlogo} />
                             <div className={` mt-4 ${mainb.logoinfo}`}>
-                                <div className='d-flex align-items-center  mb-4'>
+                                <div className='d-flex align-items-center mb-4'>
                                     <p className={`${mainb.age}`}>15</p>
                                     {logInfo.map((info, index) => (
                                         <span key={index} className={`ms-2 noto15 d-flex align-items-center justify-content-center ${mainb.logounder}`}>
@@ -53,16 +53,16 @@ function Mainbanner({btn}) {
                                     ))}
                                 </div>
                         
-                                <div className={mainb.tentText}>
-                                    <p className='noto15 mb-5'>
+                                <div>
+                                    <p className={`noto15 mb-5 ${mainb.tentText}`}>
                                         크리에이터 : 홍진주, 김서연<br />
                                         출연 : 라미안, 한가인, 류혜영, 조보아
                                     </p>
-                                    <p className='noto20 mb-3'>
+                                    <p className={`noto20 mb-3 ${mainb.tentText}`}>
                                         잘 봐~ 이번엔 언니들 캠핑이다! <br />
                                         라미란X한가인X조보아X류혜영의 味친 케미
                                     </p>
-                                    <p className='noto20'>
+                                    <p className={`noto20 ${mainb.tentText01}`}>
                                         더 와일드하고 더 리얼한 네 배우의 낭만과 궁상 사이, 하이퍼리얼 여행기!
                                     </p>
                                 </div>
@@ -110,7 +110,7 @@ function Mainbanner({btn}) {
                         </form>
 
                         <div className={`d-flex flex-column align-items-center justify-content-center mt-5 ${mainb.sublogin}`}>
-                            <p className='d-flex align-items-center'>
+                            <p className='d-flex align-items-center mb-2'>
                                 <span className={`${mainb.simplelogin} me-2`}></span>
                                 간편 로그인
                                 <span className={`${mainb.simplelogin} ms-2`}></span>

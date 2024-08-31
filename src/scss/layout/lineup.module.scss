@@ -31,11 +31,24 @@
   }
 
 @media (max-width:1200px) {
-    iframe{
-        width:1000px;
-        height: 563px;
-    }
-    .backimg{
-        height: 700px;
-    }
+    iframe {
+      width: 63rem; 
+      height: 35rem;
+  }
+
+  .backimg {
+      height: 44rem;
+  }
+}
+
+
+
+@media (max-width:576px) {
+  iframe{
+    width: 21rem;
+    height: 12rem;
+  }
+  .backimg {
+    height: 20rem;
+}
 }

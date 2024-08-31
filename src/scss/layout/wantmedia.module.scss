@@ -1,10 +1,10 @@
 .imgsize{
-    width: 40px;
-    height: 40px;
+  width: 2.5rem; 
+  height: 2.5rem;
 }
 .glassmorphism {   
-    width: 1400px;
-    height: 620px;
+  width: 87.5rem;
+  height: 38.75rem;
     background: linear-gradient(
         to right,
         rgba(255, 255, 255, 0.1) 30%,
@@ -37,7 +37,7 @@
 }
 .backimg {
     position: relative; 
-    height: 800px; 
+    height: 50rem; 
     overflow: hidden;
   }
 
@@ -66,23 +66,48 @@
       background-position: 0% 0%; /* 원래 위치로 돌아옴 */
     }
   }
-  
-@media (max-width:1200px) {
-   .glassmorphism{
-    width: 1000px;
-    height: 553px;
-   }
-   .imgsize{
-    width: 20px;
-    height: 20px;
-   }
-   .glassdiv{
+  input[type=text]{
+    padding: 10px;
     font-size: 15px;
-    width: 830px;
-    height: 350px;
+    border: none;
+    outline: none;
+}
+// @media (max-width:1200px) {
+//     .glassmorphism{
+//     width: 1000px;
+//     height: 553px;
+//    }
+//    .imgsize{
+//     width: 20px;
+//     height: 20px;
+//    }
+//    .glassdiv{
+//     font-size: 15px;
+//     width: 830px;
+//     height: 350px;
+//    }
+//    .mediaform{
+//     width: 830px;
+//     height: 65px;
+//    }
+// }
+@media (max-width:576px) {
+  .glassmorphism{
+    width: 20.5rem;
+    height: 29rem;
    }
    .mediaform{
-    width: 830px;
-    height: 65px;
+    width: 18.5rem;
+    height: 3rem;
    }
+   .glassdiv{
+    text-align: center !important;
+   }
+   .imgsize{
+    width: 1.2rem; 
+    height: 1.2rem;
+  }
+  .backimg {
+    height: 34.5rem;  
+  }
 }

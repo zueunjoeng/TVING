@@ -11,21 +11,21 @@ function Watching() {
   }, []);
 
   return (
-    <section >      
+    <section>      
       <p className='titleText'>
         내가 원하는 기기로 자유롭게<br />언제 어디서든 본방사수!
       </p>
       <div className={watching.backimg}>
-        <div className='container d-flex'>
-          <div className='col-5 d-flex flex-column justify-content-center' data-aos="fade-up">
+        <div className={`container d-flex ${watching.console}`}>
+          <div className='col-ms-5 d-flex flex-column justify-content-center align-items-center' data-aos="fade-up">
             <img src="/img/consoleimg/pcmedia.png" alt="PC Media" />
             <p className='hashTitle mt-4'>
               #스마트폰 #테블릿 #PC #TV<br />
               #최대 <span className={watching.txt}>4인 멀티 프로필</span>
             </p>
           </div>
-          <div className='col-2'></div>
-          <div className='col-5 d-flex flex-column justify-content-center' data-aos="fade-up">
+          <div className='col-ms-2'></div>
+          <div className='col-ms-5 d-flex flex-column justify-content-center align-items-center' data-aos="fade-up">
             <img src="/img/consoleimg/scence.png" alt="Scene" />
             <p className='hashTitle mt-4'>
               #<span className={watching.txt}>Quick VOD</span><br />

@@ -5,30 +5,13 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-       <footer className='border-top'>
-        <div className='d-flex align-items-center mx-3'>
-            <div >
+       <footer className={`border-top ${ft.footer} d-flex justify-content-between px-5`}>
+        <div className='d-flex flex-column'>
+            <div>
                     <Link to="/">
                         <img src="./img/tving logo.png" alt="티빙 로고" />
                     </Link>
             </div>
-            <p className={`ms-auto noto20 ${ft.word}`}>
-                <Link to="/customer-service" className='text-white'>고객센터</Link>
-                {' '}
-                <Link to="/terms-of-service" className='text-white'>이용약관</Link>
-                {' '}
-                <Link to="/privacy-policy" className='text-white'>개인정보처리방침</Link>
-                {' '}
-                <Link to="/youth-protection-policy" className='text-white'>청소년보호정책</Link>
-                {' '}
-                <Link to="/legal-notice" className='text-white'>법적고지</Link>
-                {' '}
-                <Link to="/events" className='text-white'>이벤트</Link>
-                {' '}
-                <Link to="/careers"className='text-white'>인재채용</Link>
-            </p>
-        </div>
-        <div className='d-flex align-items-top justify-content-between mx-3'>
             <div>
             <Link to="https://www.youtube.com/c/TVING_official" target='_blank'>
                 <i class={`${ft.bi} bi-youtube`}></i>
@@ -43,7 +26,25 @@ function Footer() {
                 <i class={`${ft.bi} bi-facebook`}></i>
             </Link>
             </div>
-            <div>
+            
+        </div>
+        <div className='d-flex flex-column mt-4'>
+        <p className={`noto20 ${ft.word}`}>
+                <Link to="/customer-service" className='text-white'>고객센터</Link>
+                {' '}
+                <Link to="/terms-of-service" className='text-white'>이용약관</Link>
+                {' '}
+                <Link to="/privacy-policy" className='text-white'>개인정보처리방침</Link>
+                {' '}
+                <Link to="/youth-protection-policy" className='text-white'>청소년보호정책</Link>
+                {' '}
+                <Link to="/legal-notice" className='text-white'>법적고지</Link>
+                {' '}
+                <Link to="/events" className='text-white'>이벤트</Link>
+                {' '}
+                <Link to="/careers"className='text-white'>인재채용</Link>
+            </p>
+            <div className='pt-4'>
                 <p className={`text-end noto15 ${ft.footerinfo}`}>
                 대표이사 : 최주희 | 사업자정보확인 사업자등록번호:188-88-01893 | 통신판매신고번호:2020-서우라포-3641호<br/>
                 사업장 : 서울특별시 마포구 상암산로 34, dmc디지털큐브15층 (상암동) | 호스팅신고번호: 씨제이올리브네트웍스(주)<br/>

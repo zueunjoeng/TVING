@@ -5,7 +5,6 @@
     margin: 5px;
     padding: 10px 20px;
     // border-radius: 25px;
-    width: 174px;
     cursor: pointer;
   }
   
@@ -52,5 +51,17 @@
   .hashtitle{
     align-items: center;
     width: 1000px;
+  }
+}
+@media (max-width:576px) {
+  .faqCategory {
+    margin: 6px;
+    padding: 6px 7px;
+  }
+  .faqItem{
+    font-size: 0.8em;
+  }
+  .faqanswer{
+    font-size: 0.5rem;
   }
 }

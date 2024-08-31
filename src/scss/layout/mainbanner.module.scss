@@ -48,13 +48,13 @@
 
 
 .maintent{
-   
+   //width: 100%;
 }
 .tentlogo{
-   
+   //width: 100%;
 }
 .logoinfo{
-   
+   display: inline-block;
 }
 .age{
     display: inline-block;
@@ -151,23 +151,50 @@ input::placeholder {
    .simplelogin{
         display: block;
         width: 4.3rem;
-        height: 0.5px;
+        height: 0.15px;
         background-color: white;
     } 
     p{
         font-weight: 300;
+        font-size: 0.8rem;
     }
 }
 
 
-@media (max-width:1200px) {
+// @media (max-width:1200px) {
+//     .login{
+//         display: none;
+//     }
+//     .tentlogo, .tentlink{
+//         left:35%;
+//     }
+//     .logoinfo, .tentText{
+//         left:37.5%;
+//     }
+// }
+
+@media (max-width:576px) {
+    .maintent{
+        width: 65%;
+     }
+     .leftBanner{
+        flex-direction: column;
+     }
+     .tentlogo{
+        width: 90%;
+        margin-top: 0.5rem;
+     }
     .login{
         display: none;
     }
-    .tentlogo, .tentlink{
-        left:35%;
+    .tentText{
+        margin-bottom: 1rem !important;
     }
-    .logoinfo, .tentText{
-        left:37.5%;
+    .tentText01{
+       display: none;
     }
+    .tentlink{
+        margin-top: 1rem !important;
+    }
+
 }

@@ -40,8 +40,8 @@ function Platform({cls, ea, btn}) {
                 >
              
                     
-                    {
-                        platdb.pf_swiper.map((e, i) => (
+                        {
+                        platdb.pf_swiper01.map((e, i) => (
                             <SwiperSlide key={i}>
                                 <Slidediv>
                                     <Imgdiv src={e.src} alt={e.alt} />
@@ -49,6 +49,18 @@ function Platform({cls, ea, btn}) {
                             </SwiperSlide>
                         ))
                     }
+                  
+                    {/* <div className={platf.swiper576}>
+                        {
+                        platdb.pf_swiper02.map((e, i) => (
+                            <SwiperSlide key={i}>
+                                <Slidediv>
+                                    <Imgdiv src={e.src} alt={e.alt} />
+                                </Slidediv>
+                            </SwiperSlide>
+                        ))
+                    }
+                    </div> */}
 
                 </Swiper>
            </Containdiv>
