@@ -10,6 +10,9 @@ export const Platdiv = styled.div`
     height: 430px;
     background-color: transparent;
     margin-bottom: 30px;
+    @media (max-width:576px){
+    height: auto;
+}
 `;
 
 export const Containdiv =styled.div`
@@ -29,9 +32,17 @@ export const Slidediv = styled.div`
     color: #fff;
     background:  transparent;
     width: 100%;
+    @media (max-width:576px){
+    
+        justify-content: center !important;
+    }
 `;
 
 export const Imgdiv = styled.img`
     width: 100%;
     height: 27rem;
+    @media (max-width:576px){
+    width: 50%;
+    height: 14rem;
+}
 `;

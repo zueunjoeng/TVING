@@ -50,7 +50,7 @@ function Platform({cls, ea, btn}) {
                         ))
                     }
                   
-                    {/* <div className={platf.swiper576}>
+                    {/* 
                         {
                         platdb.pf_swiper02.map((e, i) => (
                             <SwiperSlide key={i}>
@@ -60,7 +60,7 @@ function Platform({cls, ea, btn}) {
                             </SwiperSlide>
                         ))
                     }
-                    </div> */}
+                    */}
 
                 </Swiper>
            </Containdiv>

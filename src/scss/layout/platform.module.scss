@@ -38,16 +38,14 @@
     }
   }
 
-  .swiper576{
-    display: none;
-  }
+  
+@media (max-width:576px) { 
 
-@media (max-width:576px) {
     .titlesub{
       font-size : 1.6rem;
     }
     .backimg {
-    height: 47.5rem;
+    height: 35.5rem;
     }
     .swiper1920{
       display: none;
