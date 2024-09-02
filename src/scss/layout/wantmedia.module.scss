@@ -1,10 +1,10 @@
 .imgsize{
-    width: 40px;
-    height: 40px;
+  width: 2.5rem; 
+  height: 2.5rem;
 }
 .glassmorphism {   
-    width: 1400px;
-    height: 620px;
+  width: 87.5rem;
+  height: 38.75rem;
     background: linear-gradient(
         to right,
         rgba(255, 255, 255, 0.1) 30%,
@@ -36,29 +36,78 @@
     height: auto;
 }
 .backimg {
-    background-image: url('../../../public/img/bubble/bubble3.png'); /* 이미지 경로 확인 *//* 이미지를 섹션 전체에 맞게 조절 */
-    background-position: left;
-    background-repeat: no-repeat;
-    height: 800px;
-    background-position: -3% 60%;
-}
+    position: relative; 
+    height: 50rem; 
+    overflow: hidden;
+  }
 
-@media (max-width:1200px) {
-   .glassmorphism{
-    width: 1000px;
-    height: 553px;
-   }
-   .imgsize{
-    width: 20px;
-    height: 20px;
-   }
-   .glassdiv{
+  .backimg::before {
+    content: "";
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 19%; 
+    height: 100%; 
+    background-image: url('../../../public/img/bubble/bubble3.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: left top;
+    animation: float03 5s ease-in-out infinite; 
+    z-index: -1; 
+  }
+  @keyframes float03 {
+    0% {
+      background-position: 0% 0%; /* 초기 위치 */
+    }
+    50% {
+      background-position: 0% 10%; /* 이미지가 위로 이동 */
+    }
+    100% {
+      background-position: 0% 0%; /* 원래 위치로 돌아옴 */
+    }
+  }
+  input[type=text]{
+    padding: 10px;
     font-size: 15px;
-    width: 830px;
-    height: 350px;
+    border: none;
+    outline: none;
+}
+// @media (max-width:1200px) {
+//     .glassmorphism{
+//     width: 1000px;
+//     height: 553px;
+//    }
+//    .imgsize{
+//     width: 20px;
+//     height: 20px;
+//    }
+//    .glassdiv{
+//     font-size: 15px;
+//     width: 830px;
+//     height: 350px;
+//    }
+//    .mediaform{
+//     width: 830px;
+//     height: 65px;
+//    }
+// }
+@media (max-width:576px) {
+  .glassmorphism{
+    width: 20.5rem;
+    height: 29rem;
    }
    .mediaform{
-    width: 830px;
-    height: 65px;
+    width: 18.5rem;
+    height: 3rem;
    }
+   .glassdiv{
+    text-align: center !important;
+   }
+   .imgsize{
+    width: 1.2rem; 
+    height: 1.2rem;
+  }
+  .backimg {
+    height: 34.5rem;  
+  }
 }

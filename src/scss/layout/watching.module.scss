@@ -6,13 +6,28 @@
     background-image: url('../../../public/img/bubble/line.png'); /* 이미지 경로 확인 *//* 이미지를 섹션 전체에 맞게 조절 */
     background-position: center;
     background-repeat: repeat-x;
-    height: 500px;
+    height: 31.25rem;
 }
 
 @media (max-width:1200px) {
     .backimg img{
-        width: 480px;
-        height: 350px;
+        width: 30rem;
+        height: 22rem;
     }
   
+  }
+  
+@media (max-width:576px) {
+    .backimg{
+     height: 40rem;
+    img{
+        width:19rem;
+        height: 14rem;
+    }}
+  .console{
+    flex-direction: column;
+    }
+    .txt{
+        color: white
+    }
   }

@@ -1,16 +1,54 @@
+/* 부모 요소의 스타일 */
 .backimg {
-    background-image: url('../../../public/img/bubble/bubble2.png'); /* 이미지 경로 확인 *//* 이미지를 섹션 전체에 맞게 조절 */
-    background-position: right;
+    position: relative;
+    height: 900px; 
+    overflow: hidden; 
+  }
+  
+  .backimg::before {
+    content: "";
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    width: 35%;
+    height: 100%;
     background-repeat: no-repeat;
-    height: 900px;
-    background-position:100% 5%
-}
+    background-image: url('../../../public/img/bubble/bubble2.png'); 
+    background-position: right;
+    animation: float02 5s ease-in-out infinite; 
+    z-index: -1; 
+  }
+@keyframes float02 {
+    0% {
+      background-position: 0% 0%; /* 초기 위치 */
+    }
+    50% {
+      background-position: 0% 10%; /* 이미지가 위로 이동 */
+    }
+    100% {
+      background-position: 0% 0%; /* 원래 위치로 돌아옴 */
+    }
+  }
+
 @media (max-width:1200px) {
-    iframe{
-        width:1000px;
-        height: 563px;
-    }
-    .backimg{
-        height: 700px;
-    }
+    iframe {
+      width: 63rem; 
+      height: 35rem;
+  }
+
+  .backimg {
+      height: 44rem;
+  }
+}
+
+
+
+@media (max-width:576px) {
+  iframe{
+    width: 21rem;
+    height: 12rem;
+  }
+  .backimg {
+    height: 20rem;
+}
 }

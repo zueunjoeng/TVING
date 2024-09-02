@@ -10,12 +10,15 @@
     }
 }
 .text{
-        color:white;
-        background-color: #FF153C;
-        margin:0.2rem;
+        color:#FF153C;
+        border: 1px solid #FF153C;
         padding:0.2rem 0.8rem;
         text-decoration: none;
+    &:hover{
+        background-color: #FF153C;
+        color: white;
     }
+}
 .bi{
         display: block;
         font-size: 1.5rem;
@@ -48,6 +51,12 @@
         .ulcls{
             width: 100%;
             justify-content: flex-end !important;
+            li{
+                margin-left: 0.8rem;
+            }
+        }
+        .text{
+            padding:0.1rem 0.5rem;
         }
 }
 

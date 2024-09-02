@@ -1,5 +1,5 @@
-li{list-style: none;}
-    a{color: black; text-decoration:none;}
+
+    a{color: black;}
     #quick{
         position:fixed;
         right:0;
@@ -41,5 +41,9 @@ li{list-style: none;}
         font-size:30px;
     }
     
-
+    @media (max-width: 576px){
+       #quick{
+        display: none;
+       }
+      }
    
