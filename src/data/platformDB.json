@@ -36,44 +36,5 @@
             "src": "/img/video/game.jpg",
             "alt": "피라미드 게임"
         }
-    ],
-
-    "pf_swiper02": [
-        {
-            "src": "/img/video02/bob2.jpg",
-            "alt": "밥이나 한잔해"
-        },
-        {
-            "src": "/img/video02/crimscen.jpg",
-            "alt": "크라임씬"
-        },
-        {
-            "src": "/img/video02/at404.jpg",
-            "alt": "아파트 404"
-        },
-        {
-            "src": "/img/video02/diesoon.jpg",
-            "alt": "이재, 곧 죽습니다"
-        },
-        {
-            "src": "/img/video02/runaway.jpg",
-            "alt": "선재 업고 튀어"
-        },
-        {
-            "src": "/img/video02/crying.jpg",
-            "alt": "눈물의 여왕"
-        },
-        {
-            "src": "/img/video02/doctor.jpg",
-            "alt": "닥터 슬럼프"
-        },
-        {
-            "src": "/img/video02/girls.jpg",
-            "alt": "여고추리반 3"
-        },
-        {
-            "src": "/img/video02/schoolgame.jpg",
-            "alt": "피라미드 게임"
-        }
     ]
 }
