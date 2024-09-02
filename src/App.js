@@ -16,8 +16,8 @@ function App() {
     <div className="App">
          <Hd></Hd>
          <Mainbanner btn="textBtn01"></Mainbanner>
-         <Platform cls="swiper-c-dim" ea="1.8" btn="textBtn"></Platform> 
-         <Service btn="textBtn02"></Service>
+         <Platform cls="swiper-c-dim" ea="1.8" btn="textBtn01"></Platform> 
+         <Service btn="textBtn01"></Service>
          <Lineup></Lineup>
          <Wantmedia btn="textBtn01"></Wantmedia> 
          <Watching></Watching> 
