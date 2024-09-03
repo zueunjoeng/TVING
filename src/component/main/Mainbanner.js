@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import mainb from '../../scss/layout/mainbanner.module.scss';
 import { Link } from 'react-router-dom';
-import loginData from '../../data/mainDB.json'; // JSON 파일 경로
+import tvingdb from '../../data/tvingDB.json'
 
 function Mainbanner({btn}) {
     const [username, setUsername] = useState('');
@@ -11,9 +11,9 @@ function Mainbanner({btn}) {
 
     useEffect(() => {
         // JSON 파일에서 로그인 옵션과 로그 정보를 불러옵니다.
-        setLoginOptions(loginData.loginOptions);
+        setLoginOptions(tvingdb.loginOptions);
         // logInfo를 split하여 배열로 변환
-        setLogInfo(loginData.logInfo.split("|"));
+        setLogInfo(tvingdb.logInfo.split("|"));
     }, []);
 
     const handleSubmit = (event) => {

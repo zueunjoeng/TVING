@@ -3,8 +3,7 @@ import { Autoplay, EffectCoverflow } from 'swiper/modules';
 import 'swiper/css'; 
 import 'swiper/css/effect-coverflow';
 import { Link } from 'react-router-dom';
-
-import platdb from '../../data/platformDB.json'
+import tvingdb from '../../data/tvingDB.json'
 import {Platdiv, Containdiv, Slidediv, Imgdiv } from '../../commonui/platformui'
 import platf from '../../scss/layout/platform.module.scss'
 
@@ -41,7 +40,7 @@ function Platform({cls, ea, btn}) {
              
                     
                         {
-                        platdb.pf_swiper01.map((e, i) => (
+                        tvingdb.pf_swiper01.map((e, i) => (
                             <SwiperSlide key={i}>
                                 <Slidediv>
                                     <Imgdiv src={e.src} alt={e.alt} />
@@ -49,18 +48,7 @@ function Platform({cls, ea, btn}) {
                             </SwiperSlide>
                         ))
                     }
-                  
-                    {/* 
-                        {
-                        platdb.pf_swiper02.map((e, i) => (
-                            <SwiperSlide key={i}>
-                                <Slidediv>
-                                    <Imgdiv src={e.src} alt={e.alt} />
-                                </Slidediv>
-                            </SwiperSlide>
-                        ))
-                    }
-                    */}
+                
 
                 </Swiper>
            </Containdiv>

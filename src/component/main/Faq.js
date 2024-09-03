@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import faq from '../../scss/layout/faq.module.scss'; // CSS 모듈 가져오기
-import faqlistData from '../../data/faqDB.json'; // 데이터 가져오기
+import tvingdb from '../../data/tvingDB.json'
 
 // FAQ 컴포넌트
 function FAQ() {
@@ -16,7 +16,7 @@ function FAQ() {
         setActiveQuestionIndex(activeQuestionIndex === index ? null : index); // 질문 클릭 시 인덱스 토글
     };
 
-    const faqlist = faqlistData.faqlist; // JSON 데이터에서 faqlist 추출
+    const faqlist = tvingdb.faqlist; // JSON 데이터에서 faqlist 추출
 
     return (
         <section>
