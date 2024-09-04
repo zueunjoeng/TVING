@@ -37,11 +37,11 @@ function Mainbanner({btn}) {
                     </div>
                 </div>
                
-                <div className='d-flex px-xl-5 mx-xl-5 justify-content-between position-relative zup'>
+                <div className='d-flex px-xxl-5 mx-xxl-5 px-xl-3 mx-xl-3 px-lg-2 mx-lg-2 justify-content-around position-relative zup'>
                     <div className={`${mainb.leftBanner} d-flex align-items-center`}>
                         <img src="./img/mainbanner/tent.jpg" alt="" className={mainb.maintent} />
                    
-                        <div className='ps-5'>
+                        <div className='ps-xl-5 ps-sm-4 ps-3'>
                             <img src="./img/mainbanner/tentlogo01.png" alt="" className={mainb.tentlogo} />
                             <div className={` mt-4 ${mainb.logoinfo}`}>
                                 <div className='d-flex align-items-center mb-4'>
@@ -73,7 +73,7 @@ function Mainbanner({btn}) {
                         </div>
                     </div>                    
 
-                    <div className={` ${mainb.login} p-5 `}>
+                    <div className={` ${mainb.login} p-5 me-5`}>
                         <div className={`${mainb.logintxt} mt-5 mb-4`}>
                             <p>당신의 즐거움에<br /> <span>로그인</span> 하세요.</p>
                         </div>

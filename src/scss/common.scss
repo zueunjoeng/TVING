@@ -84,7 +84,9 @@ section{
   font-family: 'Noto Sans KR';
     font-size: 15px;
     font-weight: 200;
-
+    @media (max-width: 768px){
+      font-size: 0.8rem;
+    }
     @media (max-width: 576px){
       font-size: 0.8rem;
     }
@@ -95,9 +97,14 @@ section{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    
+    @media (max-width:1200px){
+      font-size: 1.1rem;
+    }
     @media (max-width: 576px){
       font-size: 1rem;
+    }
+    @media (max-width: 320px){
+      font-size: 0.9rem;
     }
 }
 
@@ -238,9 +245,7 @@ section{
   .my-n5 {
     margin-bottom: -3rem !important;
   }
-  .zup{
-    z-index: 100000;
-  }
+ 
   
   .ml-n5,
   .mx-n5 {
@@ -261,6 +266,11 @@ section{
 //       font-size: 1.25rem;
 //     }
 // }
+
+ .zup{
+    z-index: 100000;
+
+  }
 
 .dim:after{
   content: "";
@@ -313,11 +323,9 @@ section{
     line-height: normal;
     color:#FF153C;
     font-size: 20px;
-    // background-color: #FF153C;
     background-color: transparent;
     padding: 1rem;
     border: #FF153C 1px solid;
-    // border-radius: 50px;
     width: 286px;
     display: flex;
     justify-content: center;
@@ -325,7 +333,6 @@ section{
 
 
   &:hover{
-      // background-color:#FF869A;
       background-color:#FF153C;
       color:white
   }

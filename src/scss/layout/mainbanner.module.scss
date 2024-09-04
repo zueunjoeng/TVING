@@ -48,10 +48,10 @@
 
 
 .maintent{
-   //width: 100%;
+// width: 30vw;
 }
 .tentlogo{
-   //width: 100%;
+    // width: 35vw;
 }
 .logoinfo{
    display: inline-block;
@@ -73,17 +73,19 @@
    
 }
 .tentlink{
-  
+
 }
 .bi{
     font-size: 25px;
 }
 .login{
-   
     background-color: black; 
     border-radius: 200px 200px 0 0;
     font-weight: 600;
+    padding: 1.6rem !important;
+    margin-left: 1rem;
 }
+
 
 .loginform{
    
@@ -93,7 +95,7 @@
 }
 .logintxt{
     font-family: 'Black Han Sans';
-    font-size: 35px;
+    font-size: 2rem;
     text-align: center;
     font-weight: 200;
     line-height: 40px;
@@ -161,40 +163,81 @@ input::placeholder {
 }
 
 
-// @media (max-width:1200px) {
-//     .login{
-//         display: none;
-//     }
-//     .tentlogo, .tentlink{
-//         left:35%;
-//     }
-//     .logoinfo, .tentText{
-//         left:37.5%;
-//     }
-// }
-
-@media (max-width:576px) {
+@media (max-width:1200px) {
+    .logintxt{
+        font-size: 1.8rem;
+    }
     .maintent{
-        width: 65%;
-     }
-     .leftBanner{
-        flex-direction: column;
-     }
-     .tentlogo{
-        width: 90%;
-        margin-top: 0.5rem;
-     }
+        width: 34vw;
+    }
+    .tentlogo{
+        width: 32vw;
+    }
+}
+@media (max-width:992px) {
     .login{
         display: none;
     }
+    .maintent{
+        width: 42vw;
+        margin-left: 3rem;
+    }
+    .tentlogo{
+        width: 44vw;
+    }
+}
+
+@media (max-width:768px) {
+    .maintent{
+        width: 49vw;
+        margin-left: 1rem;
+    }
     .tentText{
         margin-bottom: 1rem !important;
+        margin-top: 2.1rem;
     }
     .tentText01{
-       display: none;
-    }
+        display: none;
+     }
+     
     .tentlink{
-        margin-top: 1rem !important;
+        margin-top: 4rem !important;
     }
+}
 
+@media (max-width:576px) {
+    .maintent{
+        width: 48vw;
+        margin-left: 0;
+     }
+     .leftBanner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .tentlogo{
+        width: 85vw;
+        margin-top: 0.5rem;
+     }
+     .tentlink{
+        margin-top: 3rem !important;
+    }
+}
+
+@media (max-width:320px) {
+    .maintent{
+        width: 68vw;
+        margin-left: 0;
+     }
+
+     .tentlogo{
+        width: 87vw;
+        margin-top: 0.5rem;
+     }
+     .logounder{
+        margin-left: 0.2rem !important;
+    }
+    .logoinfo{
+        margin-top: 1rem !important;
+     }
 }
