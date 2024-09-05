@@ -29,7 +29,7 @@ function Service({btn}){
                     <li className={`text d-flex align-items-center ms-5 ${service.pre_text}`}>·········   동시시청 4대  ㅣ  콘텐츠 다운로드 400회</li>  
                 </ul>
             </div>
-        <div className='d-flex justify-content-center align-items-center mt-5'>
+        <div className='d-flex justify-content-center align-items-center mt-sm-5 mt-4'>
                 <Link to='/servicesub' className={btn}>구독 신청하기</Link>
         </div>
        </section>

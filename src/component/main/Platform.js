@@ -32,7 +32,7 @@ function Platform({cls, ea, btn}) {
                         slideShadows: true,
                     }}
                     autoplay={{
-                        delay: 10000, 
+                        delay: 4000, 
                         disableOnInteraction: false,
                     }}
                     modules={[Autoplay,EffectCoverflow]} // 모듈 추가
@@ -55,7 +55,7 @@ function Platform({cls, ea, btn}) {
         </Platdiv>
         <p className={platf.titlesub}><span>오직 티빙에서만 </span></p>
         <p className={platf.titlesub}>무제한으로 스트리밍해 보세요.</p>
-        <div className='d-flex justify-content-center align-items-center mt-5'>
+        <div className='d-flex justify-content-center align-items-center mt-md-5 mt-4'>
             <Link to='/moremedia' className={btn}>티빙 스트리밍</Link>
         </div>
         </div>

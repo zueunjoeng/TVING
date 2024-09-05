@@ -3,7 +3,7 @@
   height: 2.5rem;
 }
 .glassmorphism {   
-  width: 87.5rem;
+  width: 80.5vw;
   height: 38.75rem;
     background: linear-gradient(
         to right,
@@ -72,42 +72,96 @@
     border: none;
     outline: none;
 }
-// @media (max-width:1200px) {
-//     .glassmorphism{
-//     width: 1000px;
-//     height: 553px;
-//    }
-//    .imgsize{
-//     width: 20px;
-//     height: 20px;
-//    }
-//    .glassdiv{
-//     font-size: 15px;
-//     width: 830px;
-//     height: 350px;
-//    }
-//    .mediaform{
-//     width: 830px;
-//     height: 65px;
-//    }
-// }
-@media (max-width:576px) {
+
+@media (max-width:1200px) {
   .glassmorphism{
-    width: 20.5rem;
+    width: 77.5vw;
+    height: 28rem;
+   }
+   .mediaform{
+    width: 63.5vw;
+    height: 3rem;
+   }
+   .imgsize{
+    width: 2rem; 
+    height: 2rem;
+  }
+  .backimg {
+    height: 39.5rem; 
+  }
+}
+
+@media (max-width:992px) {
+  .glassmorphism{
+    width: 88.5vw;
+    height: 28rem;
+   }
+   .mediaform{
+    width: 78.5vw;
+    height: 3rem;
+   }
+   .imgsize{
+    width: 2rem; 
+    height: 2rem;
+  }
+  .backimg {
+    height: 39.5rem; 
+  }
+}
+
+@media (max-width:768px) {
+  .glassmorphism{
+    width: 86.5vw;
     height: 29rem;
    }
    .mediaform{
-    width: 18.5rem;
+    width: 77.5vw;
     height: 3rem;
    }
    .glassdiv{
     text-align: center !important;
    }
    .imgsize{
+    width: 1.5rem; 
+    height: 1.5rem;
+  }
+  .backimg {
+    height: 38.5rem;  
+  }
+}
+
+@media (max-width:576px) {
+  .glassmorphism{
+    width: 85.5vw;
+    height: 29rem;
+   }
+   .mediaform{
+    width: 76.5vw;
+    height: 3rem;
+   }
+   .imgsize{
     width: 1.2rem; 
     height: 1.2rem;
   }
   .backimg {
-    height: 34.5rem;  
+    height: 35.5rem;  
+  }
+}
+
+@media (max-width:320px) {
+  .glassmorphism{
+    width: 97vw;
+    height: 29rem;
+   }
+   .mediaform{
+    width: 18.5rem;
+    height: 3rem;
+   }
+   .imgsize{
+    width: 1rem; 
+    height: 1rem;
+  }
+  .backimg {
+    height: 35.5rem  
   }
 }

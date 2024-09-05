@@ -207,7 +207,7 @@ input::placeholder {
 
 @media (max-width:576px) {
     .maintent{
-        width: 48vw;
+        width: 56%;
         margin-left: 0;
      }
      .leftBanner{
@@ -221,6 +221,7 @@ input::placeholder {
      }
      .tentlink{
         margin-top: 3rem !important;
+        justify-content: center !important;
     }
 }
 
@@ -240,4 +241,8 @@ input::placeholder {
     .logoinfo{
         margin-top: 1rem !important;
      }
+     .tentlink{
+        margin-top: 1rem !important;
+        justify-content: center !important;
+    }
 }

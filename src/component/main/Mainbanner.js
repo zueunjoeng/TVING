@@ -41,7 +41,7 @@ function Mainbanner({btn}) {
                     <div className={`${mainb.leftBanner} d-flex align-items-center`}>
                         <img src="./img/mainbanner/tent.jpg" alt="" className={mainb.maintent} />
                    
-                        <div className='ps-xl-5 ps-sm-4 ps-3'>
+                        <div className='ps-xl-5 ps-sm-4 d-flex flex-column'>
                             <img src="./img/mainbanner/tentlogo01.png" alt="" className={mainb.tentlogo} />
                             <div className={` mt-4 ${mainb.logoinfo}`}>
                                 <div className='d-flex align-items-center mb-4'>

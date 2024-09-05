@@ -4,8 +4,8 @@
     border: #2F2F2F 5px solid;
     padding: 15px 25px;
     // border-radius: 30px;
-    margin-right: 22rem;
-    width:22rem;
+    margin-right: 20.5vw;
+    width:29.5vw;
     text-align: center;
     font-weight: 500;   
     
@@ -25,8 +25,8 @@
        border: #2F2F2F 5px solid;
        padding: 15px 25px;
        // border-radius: 30px;
-       margin-right:19.5rem;
-       width:22rem;
+       margin-right:17.5vw;
+       width:29.5vw;
        text-align: center;
        font-weight: 500; 
        &:hover{
@@ -44,8 +44,8 @@
     border: #7F7F7F 5px solid;
     padding: 15px 25px;
     // border-radius: 30px;
-    margin-right: 19.5rem;
-    width:22rem;
+    margin-right: 17.5vw;
+    width:29.5vw;
     text-align: center;
     font-weight: 500;
     &:hover{
@@ -83,28 +83,103 @@ display: none;
 }
 
 
-
-
-@media (max-width:576px) {
+@media (max-width:1200px) {
+    .adv{
+        width: 33vw;
+        margin-right: 23vw;
+    }
+    .pre, .stan{
+        margin-right: 21vw;
+        width: 33.5vw;
+    }
     .adv{
         &:hover{
-            width: 22rem;
+            width: 95vw;
         }
     }
     .pre{
         &:hover{
-            width: 22rem;
+            width: 95vw;
      }
  }
  .stan{
     &:hover{
-        width: 22rem; 
+        width: 95vw;
     }
 }
-.adv, .pre, .stan{
-    margin: 0;
-    width: 14rem;
+
+.adv_text, .pre_text, .stan_text{
+   font-size: 1.5rem;
 }
+ul{
+    justify-content: center !important;
+}
+}
+
+@media (max-width:992px) {
+    .adv{
+        width: 51vw;
+        margin-right: 23vw;
+    }
+    .pre, .stan{
+        margin-right: 21vw;
+        width: 50.5vw;
+    }
+    .adv{
+        &:hover{
+            width: 91vw;
+        }
+    }
+    .pre{
+        &:hover{
+            width: 91vw;
+     }
+ }
+ .stan{
+    &:hover{
+        width: 91vw;
+    }
+}
+
+.adv_text, .pre_text, .stan_text{
+   font-size: 1.3rem;
+}
+ul{
+    justify-content: center !important;
+}
+}
+
+@media (max-width:768px) {
+    .adv{
+        width: 57vw;
+        margin-right: 16vw;
+    }
+    .pre, .stan{
+        margin-right: 13vw;
+        width: 56.5vw;
+    }
+
+.adv_text, .pre_text, .stan_text{
+   font-size: 1.2rem;
+}
+ul{
+    justify-content: center !important;
+}
+}
+
+@media (max-width:576px) {
+    .adv{
+        width: 61vw;
+        padding: 5px 10px;
+        margin-right: 0;
+    }
+    .pre, .stan{
+        // margin-right: 13vw;
+        width: 60.5vw;
+        padding: 5px 10px;
+        margin-right: -2vw;
+    }
+
 .adv_text, .pre_text, .stan_text{
    font-size: 0.8rem;
 }

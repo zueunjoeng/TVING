@@ -10,7 +10,7 @@ export const Platdiv = styled.div`
     height: 430px;
     background-color: transparent;
     margin-bottom: 30px;
-    @media (max-width:576px){
+    @media (max-width:768px){
     height: auto;
 }
 `;
@@ -19,7 +19,7 @@ export const Containdiv =styled.div`
   /* width:calc(100vw - 30px); */
   max-width: 1280px;
 
-@media (max-width:576px){
+@media (max-width:768px){
     width: auto;
 }
 `;
@@ -32,17 +32,25 @@ export const Slidediv = styled.div`
     color: #fff;
     background:  transparent;
     width: 100%;
-    @media (max-width:576px){
-    
-        justify-content: center !important;
+    @media (max-width:768px){
+    justify-content: center !important;
     }
 `;
 
 export const Imgdiv = styled.img`
     width: 100%;
     height: 27rem;
+    @media (max-width:768px){
+        width: 79%;
+        height: 21rem;
+    }
     @media (max-width:576px){
     width: 50%;
     height: 14rem;
 }
+@media (max-width:320px){
+    width: 43%;
+    height: 11rem;
+}
+
 `;

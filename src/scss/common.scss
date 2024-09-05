@@ -35,6 +35,12 @@ section{
     justify-content: center;
     align-items: center;
     margin-bottom: 45px;
+    @media (max-width: 992px){
+      font-size: 2.3rem;
+    }
+    @media (max-width: 768px){
+      font-size: 2rem;
+    }
     @media (max-width: 576px){
       font-size: 1rem;
       margin-bottom: 25px;
@@ -50,8 +56,15 @@ section{
   font-weight: 400;
   line-height: normal;
   text-align: center;
+  @media (max-width: 992px){
+    font-size: 2rem;
+  }
+  @media (max-width: 768px){
+    font-size: 1.7rem;
+  }
   @media (max-width: 576px){
     font-size: 1rem;
+    margin-bottom: 1.4rem !important;
   }
 }
 .hashTitle{
@@ -69,10 +82,22 @@ section{
 
 .text{
   font-family: 'Noto Sans KR';
-    font-size : 25px;
+    font-size : 23px;
     font-weight: 400;
+    @media (max-width: 1200px){
+      font-size: 21px;
+    }
+    @media (max-width: 992px){
+      font-size: 21px;
+    }
+    @media (max-width: 768px){
+      font-size: 21px;
+    }
     @media (max-width: 576px){
-      font-size: 12px;
+      font-size: 19px;
+    }
+    @media (max-width: 320px){
+      font-size: 16px;
     }
 }
 .noto12{
@@ -114,8 +139,14 @@ section{
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    @media (max-width: 992px){
+      font-size: 1.6rem;
+    }
+    @media (max-width: 768px){
+      font-size: 1.3rem;
+    }
     @media (max-width: 576px){
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
 }
 .black12{
@@ -295,6 +326,9 @@ section{
     }
     img{
       opacity: 0.5;
+    }
+    @media (max-width:768px) {
+      background-color: transparent !important;
     }
   }
 
