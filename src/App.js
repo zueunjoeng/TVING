@@ -20,7 +20,7 @@ function App() {
          <Service btn="textBtn01"></Service>
          <Lineup></Lineup>
          <Wantmedia btn="textBtn01"></Wantmedia> 
-         {/* <Watching></Watching>  */}
+         <Watching></Watching> 
          <Faq></Faq>
          <Quick></Quick>
          <Ft></Ft>     

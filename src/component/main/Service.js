@@ -6,7 +6,7 @@ function Service({btn}){
     return (
         <section>
         <p className='titleText'><span>TVING</span> 구독 서비스</p>
-            <div className='container d-flex flex-column justify-content-center align-items-start'>
+            <div className='container d-flex flex-column justify-content-center align-items-center'>
                 <ul className='d-flex justify-content-evenly mt-3'>
                     <li className={`d-flex align-items-center justify-content-between noto40 ${service.adv}`}>
                         <p>광고형 스텐다드</p>

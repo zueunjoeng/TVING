@@ -22,7 +22,6 @@
     background-size: contain;
     background-image: url('../../../public/img/bubble/bubble1.png'); 
     animation: float 5s ease-in-out infinite; 
-    // background-position: right top; 
     z-index: -1;
   }
   
@@ -38,8 +37,7 @@
     }
   }
 
-  @media (max-width:1200px) { 
- }
+
  @media (max-width:992px) { 
 
   .titlesub{
@@ -47,10 +45,7 @@
 }
   
 }
-@media (max-width:768px) { 
 
-}
-  
 @media (max-width:576px) { 
 
     .titlesub{
@@ -68,11 +63,5 @@
   }
   .backimg {
     height: 30.5rem;
-  }
-  .swiper1920{
-
-  }
-  .swiper576{
-
   }
 }

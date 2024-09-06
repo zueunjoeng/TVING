@@ -94,10 +94,10 @@ section{
       font-size: 21px;
     }
     @media (max-width: 576px){
-      font-size: 19px;
+      font-size: 16px;
     }
     @media (max-width: 320px){
-      font-size: 16px;
+      font-size: 15px;
     }
 }
 .noto12{
@@ -369,6 +369,10 @@ section{
   &:hover{
       background-color:#FF153C;
       color:white
+  }
+  @media (max-width:576px) {
+    padding: 0.8rem;
+    width: 267px;
   }
 }
 .textBtn02{

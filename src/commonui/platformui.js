@@ -16,7 +16,6 @@ export const Platdiv = styled.div`
 `;
 
 export const Containdiv =styled.div`
-  /* width:calc(100vw - 30px); */
   max-width: 1280px;
 
 @media (max-width:768px){

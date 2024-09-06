@@ -16,7 +16,7 @@ function Watching() {
         내가 원하는 기기로 자유롭게<br />언제 어디서든 본방사수!
       </p>
       <div className={watching.backimg}>
-        <div className={`container d-flex ${watching.console}`}>
+        <div className={`container d-flex ${watching.console} justify-content-around`}>
           <div className='col-ms-5 d-flex flex-column justify-content-center align-items-center' data-aos="fade-up">
             <img src="/img/consoleimg/pcmedia.png" alt="PC Media" />
             <p className='hashTitle mt-4'>
