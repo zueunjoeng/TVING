@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React from 'react'
 import ft from '../../scss/layout/footer.module.scss';
 import { Link } from 'react-router-dom';
 
